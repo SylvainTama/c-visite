@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body { 				/*decors total*/
+	display: flex;
+	background-image: url(image/fondbis.jpg);
+	justify-content: center;
+  align-items: center;
+}
+
+#mainCard {				/*carte de visite*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(image/fondjaune1.jpg);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin-top: 1em;
+}
+
+#header {			/*flexbox de l'en-tete*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.photo {			/*photo*/
+	height: 150px;
+	width: 130px;
+	border-radius: 50px;
+	margin-top: 10px;
+} 
+
+#header h1 {		/*nom et prenom*/
+	padding-top: 30px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 52px;
+}
+
+#profession h2 {	/*profession*/
+	text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	font-style: italic;
+}
+
+#presentation {		
+	text-align: center;
+}
+
+#presentation ul {	/*pas de marge*/
+	padding: 0;
+}
+
+#presentation li { 	/*li du bloc presentation*/
+	margin: 2vh auto;
+	list-style-type: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#presentation h3 {		/*rendu des blocs caches*/
+	background-image: url(image/fondbis.jpg);
+	border-radius: 5px;
+	font-size: 1em;
+	margin: 1em;
+}
+
+label {				
+	text-align: center;
+	font-size: 120%;
+	height: 120%;
+}
+
+label.clickable {		/*transformer en main les objets de class clickable*/
+ 	cursor: pointer;
+}
+label.clickable:hover {	/*ajouter une couleur en surbrillance*/
+ 	background-image: url(image/fondbis.jpg);
+}
+
+#firstTrigger:checked + .who {	/*checkbox debloque la classe who*/
+ 	display: block;
+}
+
+.who {
+  	text-align: center;
+ 	display: none;
+}
+
+#secondTrigger:checked + .work {	/*checkbox debloque la classe work*/
+  	display: block;
+}
+
+.work {
+ 	text-align: center;
+  	display: none;
+}
+
+#thirdTrigger:checked + .passions {	/*checkbox debloque la classe passions*/
+	display: block;
+}
+
+.passions {
+  	text-align: center;
+  	display: none;
+}
+
+.line {		/*rendu de ma ligne de separation*/
+	border: 1px double black;
+	margin: 2em 5em 0.5em 5em;
+}
+
+#simplon {		/*rendu de la div simplon*/
+	background-image: url(image/fondbis.jpg);
+	border-radius: 15px;
+	margin: 1em;
+}
+
+#simplon h2 {
+	text-align: center;
+	font-size: 1.3em;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#simplon h3 {
+	text-align-last: left;
+	font-size: 1em;
+}
+
+#contact { 		/*flexbox de la div contact*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#mails h4 {		/*reduit l'espace entre les lignes*/
+	line-height: 0.2em;
+}
+
+#myLinks ul {		
+	text-align: center;
+	padding: 0;
+	margin-top: 1em;
+}
+
+#myLinks li {		/*disposition en ligne des balises li*/
+	list-style-type: none;
+	display: inline;
+}
+
+.miniature {			
+	text-decoration: none;
+}
+
+.link {		/*taille et espacement entre les icones*/
+	height: 35px;
+	width: 35px;
+	margin-left: 0.5em;
+}
